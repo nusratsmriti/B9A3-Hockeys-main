@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a021b1ec51.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="lg:mx-32">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a class="manrope font-bold text-[#FF4240] pr-11">Home</a></li>
+              <li><a class="manrope font-bold text-[#424247] pr-11">About</a></li>
+              <li><a class="manrope font-bold text-[#424247] pr-11">Pages</a></li>
+              <li><a class="manrope font-bold text-[#424247] pr-11">Blog</a></li>
+              <li><a class="manrope font-bold text-[#424247] pr-11">Contact</a></li>
+
+            </ul>
+          </div>
+          <a class=" text-2xl md:text-3xl lg:text-4xl manrope font-extrabold lg:pr-48 ">Hockey<span
+              class="text-[#FF4240]">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="manrope font-bold text-[#FF4240] pr-11">Home</a></li>
+            <li><a class="manrope font-bold text-[#424247] pr-11">About</a></li>
+            <li><a class="manrope font-bold text-[#424247] pr-11">Pages</a></li>
+            <li><a class="manrope font-bold text-[#424247] pr-11">Blog</a></li>
+            <li><a class="manrope font-bold text-[#424247] pr-11">Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a href=""><i
+              class="fa-solid fa-magnifying-glass text-[#89898B] w-[24px] h-[24px]  lg:pr-6 hidden  lg:block"></i></a>
+          <a class="btn bg-[#FF4240] border-[#FF4240] text-white manrope text-xl">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mx-5 lg:mx-32 mt-9 lg:mt-16">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+
+          <img src="Images/1.png" class="w-full h-[200px] lg:h-full" />
+          <div class="hidden lg:block lg:absolute ">
+            <div class=" p-8 bg-[#131318] rounded-2xl   lg:mt-[370px] lg:ml-[600px]">
+              <h3 class="manrope text-white text-2xl font-extrabold  ">Meet all the heroes from the field</h3>
+              <p class="manrope text-[#FFFFFF99] font-medium pt-4 ">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam
+                <br>turpis placerat dolor.
+                Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div class="absolute mt-[150px] ml-[134px] lg:mt-[490px] flex -translate-y-1/2 transform lg:ml-4">
+            <a href="#slide3" class="btn btn-circle  border-black bg-black text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle border-black bg-black text-white ml-4">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+
+          <img src="Images/1.png" class="w-full h-[200px] lg:h-full" />
+          <div class="hidden lg:block lg:absolute ">
+            <div class=" p-8 bg-[#131318] rounded-2xl   lg:mt-[370px] lg:ml-[600px]">
+              <h3 class="manrope text-white text-2xl font-extrabold  ">Meet all the heroes from the field</h3>
+              <p class="manrope text-[#FFFFFF99] font-medium pt-4 ">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam
+                <br>turpis placerat dolor.
+                Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div class="absolute mt-[150px] ml-[134px] lg:mt-[490px] flex -translate-y-1/2 transform lg:ml-4">
+            <a href="#slide1" class="btn btn-circle  border-black bg-black text-white">❮</a>
+            <a href="#slide3" class="btn btn-circle border-black bg-black text-white ml-4">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+
+          <img src="Images/1.png" class="w-full h-[200px] lg:h-full" />
+          <div class="hidden lg:block lg:absolute ">
+            <div class=" p-8 bg-[#131318] rounded-2xl   lg:mt-[370px] lg:ml-[600px]">
+              <h3 class="manrope text-white text-2xl font-extrabold  ">Meet all the heroes from the field</h3>
+              <p class="manrope text-[#FFFFFF99] font-medium pt-4 ">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam
+                <br>turpis placerat dolor.
+                Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div class="absolute mt-[150px] ml-[134px] lg:mt-[490px] flex -translate-y-1/2 transform lg:ml-4">
+            <a href="#slide2" class="btn btn-circle  border-black bg-black text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle border-black bg-black text-white ml-4">❯</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="block lg:hidden  ">
+        <div class=" p-3 bg-[#131318] rounded-2xl ">
+          <h3 class="manrope text-white text-[18px] font-extrabold  ">Meet all the heroes from the field</h3>
+          <p class="manrope text-xs text-[#FFFFFF99] font-medium pt-4 ">Dit amet consectetur. Condimentum dignissim
+            adipiscing aliquam
+            <br>turpis placerat dolor.
+            Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Professional Hockeys Club -->
+  <section class=" mx-4 lg:mx-32 mt-6 lg:mt-24 ">
+    <div class="text-center space-y-6 border-y border-[#13131833] border-dashed py-8">
+      <h3 class="text-3xl lg:text-4xl manrope text-[#131318] font-extrabold">Professional Hockeys Club</h3>
+      <p class="text-[#13131899] manrope font-medium text-[14px] lg:text-xl">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat
+        dolor. <br> Purus urna in sit nullam proin.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-4 mt-12 gap-8">
+      <!-- item1 -->
+      <div>
+        <div class="relative flex justify-center items-center">
+          <div class="w-[120px] h-[120px] rounded-full border-8  border-red-500"></div>
+          <div class="absolute w-[120px] h-[120px] rounded-full border-8  border-gray-200"
+            style="clip: rect(0, 2em, 2em, 1em); transform: rotate(312.6deg);"></div>
+          <div class="absolute text-black text-2xl manrope font-extrabold">87%</div>
+        </div>
+        <div class="text-center mt-6 space-y-4">
+          <h1 class="text-xl manrope font-semibold">Prayer Facility</h1>
+          <p class="text-[#13131899] manrope ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+      <!-- item2 -->
+      <div>
+        <div class="relative flex justify-center items-center">
+          <div class="w-[120px] h-[120px] rounded-full border-8  border-green-500"></div>
+          <div class="absolute w-[120px] h-[120px] rounded-full border-8  border-gray-200"
+            style="clip: rect(0, 2em, 2em, 1em); transform: rotate(312.6deg);"></div>
+          <div class="absolute text-black text-2xl manrope font-extrabold">95%</div>
+        </div>
+        <div class="text-center mt-6 space-y-4">
+          <h1 class="text-xl manrope font-semibold">Prayer Facility</h1>
+          <p class="text-[#13131899] manrope ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+      <!-- item3 -->
+      <div>
+        <div class="relative flex justify-center items-center">
+          <div class="w-[120px] h-[120px] rounded-full border-8  border-yellow-500"></div>
+          <div class="absolute w-[120px] h-[120px] rounded-full border-8  border-gray-200"
+            style="clip: rect(0, 2em, 2em, 1em); transform: rotate(312.6deg);"></div>
+          <div class="absolute text-black text-2xl manrope font-extrabold">90%</div>
+        </div>
+        <div class="text-center mt-6 space-y-4">
+          <h1 class="text-xl manrope font-semibold">Prayer Facility</h1>
+          <p class="text-[#13131899] manrope ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+      <!-- item4 -->
+      <div>
+        <div class="relative flex justify-center items-center">
+          <div class="w-[120px] h-[120px] rounded-full border-8  border-blue-500"></div>
+          <div class="absolute w-[120px] h-[120px] rounded-full border-8  border-gray-200"
+            style="clip: rect(0, 2em, 2em, 1em); transform: rotate(312.6deg);"></div>
+          <div class="absolute text-black text-2xl manrope font-extrabold">80%</div>
+        </div>
+        <div class="text-center mt-6 space-y-4">
+          <h1 class="text-xl manrope font-semibold">Prayer Facility</h1>
+          <p class="text-[#13131899] manrope ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Program Sections -->
+  <section class=" mx-4 lg:mx-32 mt-6 lg:mt-24 ">
+    <div class="text-center space-y-6 border-y border-[#13131833] border-dashed py-8">
+      <h3 class="text-3xl lg:text-4xl manrope text-[#131318] font-extrabold">Program Sections</h3>
+      <p class="text-[#13131899] manrope font-medium text-[14px] lg:text-xl">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.</p>
+    </div>
+
+    <!-- cards
+            -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10 lg:mt-20 ">
+      <!-- card 1 -->
+      <div class="carousel  w-full   ">
+        <div id="slide1" class="carousel-item relative w-full  ">
+          <img src="Images/2.png" class="w-full h-[365px]  opacity-90 z-0" />
+          <div class="absolute px-4  lg:pl-10 space-y-4 lg:pr-16  z-10  ">
+            <h3 class="text-white font-extrabold manrope text-xl lg:text-3xl pt-12 lg:pt-24">Junior Program</h3>
+            <p class="text-white font-extrabold manrope text-[14px] lg:text-[16px] ">Dolor sit amet consectetur. Ut urna
+              diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn  bg-[#FF4240] lg:px-6 text-white border-[#FF4240]  font-bold text-sm lg:text-xl ">Register
+              Now!</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="carousel  w-full   ">
+        <div id="slide1" class="carousel-item relative w-full  ">
+          <img src="Images/3.png" class="w-full h-[365px]  opacity-90 z-0" />
+          <div class="absolute px-4  lg:pl-10 space-y-4 lg:pr-16  z-10  ">
+            <h3 class="text-white font-extrabold manrope text-xl lg:text-3xl pt-12 lg:pt-24">Teenager Program</h3>
+            <p class="text-white font-extrabold manrope text-[14px] lg:text-[16px] ">Dolor sit amet consectetur. Ut urna
+              diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn  bg-[#FF4240] lg:px-6 text-white border-[#FF4240]  font-bold text-sm lg:text-xl ">Register
+              Now!</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="carousel  w-full  lg:col-span-2  ">
+        <div id="slide1" class="carousel-item relative w-full  ">
+          <img src="Images/4.png" class="w-full h-[365px]  opacity-90 z-0" />
+          <div class="absolute px-4  lg:pl-10 space-y-4 lg:pr-16  z-10  ">
+            <h3 class="text-white font-extrabold manrope text-xl lg:text-3xl pt-12 lg:pt-44">Professional Program</h3>
+            <p class="text-white font-extrabold manrope text-[14px] lg:text-[16px] ">Dolor sit amet consectetur. Ut urna
+              diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn  bg-[#FF4240] lg:px-6 text-white border-[#FF4240]  font-bold text-sm lg:text-xl ">Register
+              Now!</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ur New Products -->
+  <section class=" mx-4 lg:mx-32 mt-6 lg:mt-28">
+    <div class="text-center space-y-6 border-y border-[#13131833] border-dashed py-8">
+      <h3 class="text-3xl lg:text-4xl manrope text-[#131318] font-extrabold">Our New Products</h3>
+      <p class="text-[#13131899] manrope font-medium text-[14px] lg:text-xl">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.</p>
+    </div>
+    <!-- cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-12 gap-6 ">
+      <!-- card 1
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/5.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">World Cup Flags Footbal</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/6.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">World Cup Flags Footbal</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/7.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">Cap For Hockeys</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/8.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">World Cup Flags Footbal</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 5 
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/9.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">World Cup Flags Footbal</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 1
+        -->
+      <div class="hero w-full p-2 lg:p-6 bg-[#FFF] border-[#13131819] border-2 rounded-2xl  ">
+        <div class="hero-content flex-col lg:flex-row ">
+          <img src="Images/10.png" class="w-[280px] lg:w-[188px] h-[150px] lg:h-[172px] rounded-lg " />
+          <div class="space-y-3">
+            <div class="flex gap-x-4">
+              <p class="text-[#F99808] text-[16px]"><i class="fa-solid fa-star"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  5.0</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-eye"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  20</span></p>
+              <p class="text-[#13131880] text-[16px]"><i class="fa-regular fa-heart"></i> <span
+                  class="pl-2 text-[#13131880] font-medium text-[16px]">
+                  200</span></p>
+            </div>
+            <h1 class="text-xl manrope font-bold">World Cup Flags Footbal</h1>
+            <p class="text-[#13131880] manrope font-medium">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex flex-col lg:flex-row ">
+              <p class="text-[18px] font-extrabold manrope text-[#FF4240]">Price - $22.00</p>
+              <p class="text-[#13131880] text-[16px] lg:pl-5 "><i class="fa-solid fa-cart-plus"></i> <span
+                  class=" text-[#13131880] font-medium text-[16px]">
+                  Delivery Fee : Free</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Clients Question -->
+  <section class=" mx-4 lg:mx-32 mt-6 lg:mt-24 ">
+    <div class="text-center space-y-6 border-y border-[#13131833] border-dashed py-8">
+
+      <h3 class="text-3xl lg:text-4xl manrope text-[#131318] font-extrabold">Clients Question</h3>
+      <p class="text-[#13131899] manrope font-medium text-[14px] lg:text-xl">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-10 border-2 border-[#1313181A] mt-12 rounded-2xl p-8">
+      <div class="flex-1"><img src="Images/11.png" alt=""></div>
+      <div class="flex-1">
+        <div class="collapse collapse-plus rounded-none broder-1 border-b pb-4  border-[#1313181A] ">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-bold manrope lg:w-[700px]">Our Equipment</div>
+          <div class="collapse-content">
+            <p class="text-[#13131899] lg:pr-12">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              sagittis turpis in magna.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus rounded-none broder-1 border-b py-4 border-[#1313181A] ">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-bold manrope lg:w-[700px]">Private Lessons</div>
+          <div class="collapse-content">
+            <p class="text-[#13131899] lg:pr-12">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              sagittis turpis in magna.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus rounded-none broder-1 border-b py-4 border-[#1313181A] ">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-bold manrope lg:w-[700px]">Ski Touring</div>
+          <div class="collapse-content">
+            <p class="text-[#13131899] lg:pr-12">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              sagittis turpis in magna.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus rounded-none broder-1 border-b py-4 border-[#1313181A] ">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-bold manrope lg:w-[700px]">Booking</div>
+          <div class="collapse-content">
+            <p class="text-[#13131899] lg:pr-12">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              sagittis turpis in magna.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus rounded-none broder-1 border-b py-4 border-[#1313181A] ">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-bold manrope lg:w-[700px]">Pricings</div>
+          <div class="collapse-content">
+            <p class="text-[#13131899] lg:pr-12">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              sagittis turpis in magna.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <!-- Get In Touch -->
+  <section class=" mx-4 lg:mx-32 mt-6 lg:mt-24 ">
+    <div class="text-center space-y-6 border-y border-[#13131833] border-dashed py-8">
+
+      <h3 class="text-3xl lg:text-4xl manrope text-[#131318] font-extrabold"> Get In Touch </h3>
+      <p class="text-[#13131899] manrope font-medium text-[14px] lg:text-xl">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.</p>
+    </div>
+    <div class=" flex flex-col lg:flex-row mt-12 ">
+      <div class="  grid grid-cols-1 lg:w-[470px] p-3 lg:p-12 gap-y-12 border-2 border-[#1313181A] rounded-2xl">
+        <!-- card1 -->
+        <div class="card card-compact bg-[#BCED6D1A] p-8 rounded-r-2xl ">
+
+          <img class="justify-start w-[48px] h-[48px]" src="Images/Group 1171275317.png" alt="Shoes" />
+
+          <div class="pt-6">
+            <p class="text-[#13131866] font-normal manrope">Phone Number :</p>
+            <h2 class="card-title text-[#131318] manrope extrabold text-[18px]">(+62) 123-321-543</h2>
+
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card card-compact bg-[#BCED6D1A] p-8 rounded-r-2xl ">
+
+          <img class="justify-start w-[48px] h-[48px]" src="Images/Group 1171275318.png" alt="Shoes" />
+
+          <div class="pt-6">
+            <p class="text-[#13131866] font-normal manrope">Email :</p>
+            <h2 class="card-title text-[#131318] manrope extrabold text-[18px]">xyz@gamil.com</h2>
+
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="card card-compact bg-[#BCED6D1A] p-8 rounded-r-2xl ">
+
+          <img class="justify-start w-[48px] h-[48px]" src="Images/Group 1171275321.png" alt="Shoes" />
+
+          <div class="pt-6">
+            <p class="text-[#13131866] font-normal manrope">Location :</p>
+            <h2 class="card-title text-[#131318] manrope extrabold text-[18px]">152/1 Mohakhali Wireless Gate</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 pl-6">
+        <form>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <fieldset class="form-control ">
+              <label class="label">
+                <span class="label-text text-xl manrope font-bold"> Your Name</span>
+              </label>
+              <input type="text" placeholder="Enter your full name" class="input p-4 mt-4 bg-[#13131808]" />
+            </fieldset>
+            <fieldset class="form-control ">
+              <label class="label">
+                <span class="label-text text-xl manrope font-bold"> Your Email</span>
+              </label>
+              <input type="text" placeholder="Enter your email" class="input p-4 mt-4 bg-[#13131808]" />
+            </fieldset>
+            <fieldset class="form-control ">
+              <label class="label">
+                <span class="label-text text-xl manrope font-bold"> Subjec</span>
+              </label>
+              <input type="text" placeholder="Enter your subjec" class="input p-4 mt-4 bg-[#13131808]" />
+            </fieldset>
+            <fieldset class="form-control ">
+              <label class="label">
+                <span class="label-text text-xl manrope font-bold"> Phone Number</span>
+              </label>
+              <input type="text" placeholder="Enter your phone number" class="input p-4 mt-4 bg-[#13131808]" />
+            </fieldset>
+          </div>
+          <div>
+            <fieldset class="form-control ">
+              <label class="label mt-6">
+                <span class="label-text text-xl manrope font-bold  "> Message</span>
+              </label>
+              <input type="text" placeholder="Write your message" class="input h-[370px] p-4 mt-4 bg-[#13131808]" />
+            </fieldset>
+            <button class="btn bg-[#FF4240] border-[#FF4240] w-full mt-8 text-white manrope font-bold text-xl ">Send
+              Message</button>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+    
+      <div class="card bg-[#13131808] w-full rounded-xl mt-12">
+        <div class="card-body">
+          <h2 class="card-title text-2xl manrope font-extrabol justify-center">Social Media</h2>
+          <div class="flex justify-center">
+            <i class="fa-brands text-3xl fa-facebook-f"></i>
+            <i class="fa-brands pl-6 text-3xl fa-instagram"></i>
+            <i class="fa-brands pl-6 text-3xl fa-github"></i>
+            <i class="fa-brands pl-6 text-3xl fa-twitter"></i>
+          </div>          
+        </div>
+
+    </div>
+  </section>
+
+  <footer class="footer bg-[#131318] py-10 lg:py-24 px-14 lg:px-32 mt-24 text-base-content p-10">
+    <aside class="flex flex-col items-center em lg:items-start">
+      <h2 class="text-2xl font-extrabold manrope text-white">Get In Touc</h2>
+      <p class="text-[#FFFFFF99] font-medium manrope"
+      >
+        Dit amet consectetur. Condimentum <br>  adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.
+      </p>
+      <div>
+        <p class="text-[#FF4240] text-[16px]"><i class="fa-regular fa-envelope"></i> <span class="pl-4 text-[#FFFFFFCC]">xyz@gmail.com</span></p>
+        <p class="text-[#FF4240] text-[16px] mt-4"><i class="fa-solid fa-phone"></i> <span class="pl-4 text-[#FFFFFFCC]">(+62) 123-321-543</span></p>
+      </div>
+    </aside>
+      <div class="flex flex-row ">
+        <nav class="grid">
+          <h6 class="footer-title text-xl font-extrabold manrope text-white">Company</h6>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">About us</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Leadership</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Careers</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">News & Article</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Legal Notice</a>
+        </nav>
+        <nav class="grid pl-10 lg:pl-40 ">
+          <h6 class="footer-title text-xl font-extrabold manrope text-white">Support</h6>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Help Center</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">FAQ</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Ticket Support</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Contact Us</a>
+        </nav>
+        
+      </div>
+      
+      
+        <nav class="pl-16 lg:p-0 " >
+          <h6 class="footer-title text-center text-xl font-extrabold manrope text-white">Services</h6>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Academy</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Group Lesson</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Private Lesson</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">Hockeys for kids</a>
+          <a class="link link-hover font-medium manrope text-[#FFFFFF99]">ockeys for Adult</a>
+        </nav>
+
+      
+  </footer>
+
+
+</body>
+
+</html>
